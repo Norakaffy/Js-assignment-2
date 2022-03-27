@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input 
+    onfocus = "nest (this)"
+    onblur = "nest2 (this) "
+    onselect="nest3 (this)"
+    ondrag="nest4(this)"
+    type="text"
+    placeholder="enter a name"/>
+
+    <script>
+
+        // onfocus
+        function nest (mary) {
+            mary.style.color = "yellowgreen";
+            mary.style.fontSize = "30px";
+            mary.style.backgroundColor = "white";
+            mary.style.fontStyle = "italic";
+            mary.style.textAlign = "right"
+        }
+
+
+        // on blur
+
+
+            function nest2 (nora) {
+                nora.style.backgroundColor = "transparent";
+                nora.style.fontSize = "15px";
+                nora.style.fontStyle = "normal";
+                nora.style.textAlign = "left";
+            }
+
+
+            // onselect
+
+            function nest3 (tony) {
+                tony.style.backgroundColor = "green";
+                tony.style.fontSize = "13px";
+                tony.style.fontStyle = "normal";
+                tony.style.textAlign = "left";
+            }
+
+        //    ondrag
+
+
+        function nest4(bryan){
+            bryan.style.color = "pink";
+            bryan.style.fontSize = "60px";
+        }
+
+    </script>
+</body>
+</html>
